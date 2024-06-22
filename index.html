@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <title>H.D - Seguridad e Higiene Ambiental - Dirección de Obras Civiles</title>
+        <meta name="description" content="H.D. Somos una empresa dedicada a brindar servicios de Higiene y Seguridad Ambiental Laboral, Proyecto y Dirección Técnica De Obras Civiles, tanto en el rubro de la construcción, como en establecimientos educativos, Comercios, empresas industriales y de servicios." />
+        <meta name="keywords" content="hd, seguridad, higiene, seguridad e higiene, obras civiles, obras, civiles, construccion, cascos, guantes, protocolo, buenos aires, bahia blanca, alsina, hugo diaz, hugo, diaz" />
+        <meta property="og:title" content="H.D - Seguridad e Higiene Ambiental - Dirección de Obras Civiles" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:secure_url" itemprop="image" content="https://hdseguridadyobras.com.ar/thumbnail_256.png" />
+        <meta property="og:url" content="https://hdseguridadyobras.com.ar" />
+        <link href="/main.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/header.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/footer.css" rel="stylesheet" type="text/css" media="all">
+        <meta name="author" content="Francisco Iturrieta" />
+        <meta name="copyright" content="Francisco Iturrieta" />
+        <style>
+            /* Categories Code */
+
+            .categories {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .categories .category {
+                width: 300px;
+                height: 300px;
+                margin-left: 40px;
+                margin-right: 40px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                background-color: mediumblue;
+                color: white;
+                position: relative;
+            }
+            
+            .category .usoverlay {
+                z-index: 1;
+                position: absolute;
+                background-color:rgba(0,0,0,0.4);
+                border-radius: 15px;
+            }
+
+            .category .category-title {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                background-color: rgba(255, 255, 255, 0.2);
+                z-index: 2;
+            }
+
+            .category-readmore {
+                text-align: center;
+                position: absolute;
+                bottom: 20px;
+                z-index: 2;
+                color:rgba(255, 255, 255, 0);
+                animation: fadeDisappear;
+                animation-duration: 0.3s;
+                cursor: pointer;
+            }
+            
+            .category .overlay-show {
+                display: flex;
+                justify-content: center;
+            }
+
+            .overlay-show:hover .category-readmore {
+                color:rgba(255, 255, 255, 1);
+                animation: fadeAppear;
+                animation-duration: 0.3s;
+            }
+
+            #seguridad-salud {
+                background-image: url('/graphics/categoria1.jpg');
+                background-size: cover;
+            }
+
+            #obras-civiles {
+                background-image: url('/graphics/categoria2.jpg');
+                background-size: cover;
+            }
+
+            .site-categories {
+                padding-bottom: 70px;
+            }
+        </style>
+        <style>
+            /* Contact Code */
+
+            .site-contact {
+                width: 100%;
+                padding-top: 1px;
+                padding-bottom: 70px;
+                background-image: url('/graphics/contacto.jpg');
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+
+            .site-contact .info-title {
+                color: white;
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                background-color: rgba(100, 100, 100, 0.2);
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            .contact-info-item {
+                margin: 20px;
+                display: flex;
+                align-items: center;
+            }
+
+            .contact-info-item img, .contact-info-item svg {
+                margin-right: 8px;
+            }
+
+            .contact-map {
+                width: 365px;
+                height: 365px;
+            }
+
+            .map {
+                border-radius: 15px;
+                width: inherit;
+                height: inherit;
+            }
+        </style>
+        <style>
+            /* Info Background Images */
+
+            #description2 {background-image: url('/graphics/description2.jpg');}
+            #description3 {background-image: url('/graphics/description3.jpg');}
+            #description4 {background-image: url('/graphics/description4.jpg');}
+            #description5 {background-image: url('/graphics/description5.jpg'); background-position: 220px;}
+        </style>
+        <link href="/responsive.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-logo">
+                <a class="header-logo-container" href="/">
+                    <div class="header-logo-svg"><img src="/graphics/newlogo.svg"></div>
+                </a>
+            </div>
+            <div class="header-menu">
+                <nav>
+                    <div class="header-nav">
+                        <a class="header-nav-item" id="option-home" href="/">Inicio</a>
+                        <a class="header-nav-item" id="option-about" href="/#nosotros">Nosotros</a>
+                        <a class="header-nav-item" id="option-services" href="/#servicios">Servicios</a>
+                        <a class="header-nav-item" id="option-contact" href="/#contacto">Contacto</a>
+                        <div class="header-nav-drop-down-button filter-white"><img src="/graphics/toggle.svg"></div>
+                    </div>
+                    <div class="options-menu" id="option-services-menu" style="display: none;">
+                        <ul>
+                            <li><a href="/seguridadhigiene/">Seguridad e Higiene Ambiental Laboral</a></li>
+                            <li><a href="/obrasciviles/">Proyecto y Dirección de Obras Civiles</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-nav-container">
+                <div class="usoverlay"></div>
+                <div class="mobile-nav">
+                    <a class="mobile-nav-item" id="option-home" href="/">Inicio</a>
+                    <a class="mobile-nav-item" id="option-about" href="/#nosotros">Nosotros</a>
+                    <a class="mobile-nav-item" id="option-services">Servicios</a>
+                    <div class="mobile-options-menu" id="option-services-menu" style="display: none;">
+                        <ul>
+                            <li><a class="mobile-nav-item" href="/seguridadhigiene/">Seguridad e Higiene Ambiental Laboral</a></li>
+                            <li><a class="mobile-nav-item" href="/obrasciviles/">Proyecto y Dirección de Obras Civiles</a></li>
+                        </ul>
+                    </div>
+                    <a class="mobile-nav-item" id="option-contact" href="/#contacto">Contacto</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <section class="site-banner">
+                <div class="usoverlay"></div>
+                <div class="banner-img">
+                    <img src="/graphics/banner-logo.svg">
+                </div>
+            </section>
+            <section class="site-description" id="nosotros">
+                <div class="info" id="description1">
+                    <h1 class="info-title">¿Quiénes Somos?</h1>
+                    <div class="info-text text-justify" style="padding-bottom: 70px;">
+                        Somos una empresa dedicada a brindar servicios de Higiene y Seguridad Ambiental Laboral, Proyecto y Dirección Técnica De Obras Civiles, con matricula habilitante en la provincia de Buenos Aires, tanto en el rubro de la construcción, como en establecimientos educativos, Comercios, empresas industriales y de servicios. Nuestro principal objetivo es brindar el mejor asesoramiento, dando soluciones acordes a la necesidad de cada empresa.
+                    </div>
+                </div>
+                <div class="info linear-info" id="description2">
+                    <div class="linear-gradient-right">
+                        <div class="info-text text-right">
+                            Garantizamos a las empresas el desarrollo de las actividades laborales en un ambiente favorable para la salud y seguridad de los trabajadores, obteniendo mejores estándares de calidad en cumplimiento de las normativas vigentes.
+                        </div>
+                    </div>
+                </div>
+                <div class="info linear-info" id="description3">
+                    <div class="linear-gradient-left">
+                        <div class="info-text text-left">
+                            En cuanto al rubro Obras Civiles, nos ocupamos de su vivienda desde el anteproyecto, estudio de suelo, la realización de planos y trámites municipales.
+                        </div>
+                    </div>
+                </div>
+                <div class="info linear-info" id="description4">
+                    <div class="linear-gradient-right">
+                        <div class="info-text text-right">
+                            Llevamos adelante la Dirección de Obra, en cada etapa de la ejecución, asegurando el mejor control de calidad en las distintas etapas de la obra.
+                        </div>
+                    </div>
+                </div>
+                <div class="info linear-info" id="description5">
+                    <div class="linear-gradient-left">
+                        <div class="info-text text-left">
+                            El objetivo de esta conjunción es de unificar conocimientos Técnicos en Seguridad e Higiene y Obras Civiles, para ofrecer un servicio diferente a nuestros clientes.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="site-categories" id="servicios">
+                <h1 class="info-title">Nuestros Servicios</h1>
+                <div class="categories">
+                    <div class="category" id="seguridad-salud">
+                        <div class="usoverlay"></div>
+                        <div class="category-title">Seguridad e Higiene Ambiental Laboral</div>
+                        <a class="overlay-show" href="/seguridadhigiene/">
+                            <div class="category-readmore">Leer más</div>
+                        </a>
+                    </div>
+                    <div class="category" id="obras-civiles">
+                        <div class="usoverlay"></div>
+                        <div class="category-title">Proyecto y Dirección Técnica de Obras Civiles</div>
+                        <a class="overlay-show" href="/obrasciviles/">
+                            <div class="category-readmore">Leer más</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="site-contact" id="contacto">
+                <h1 class="info-title">Contacto</h1>
+                <div class="contact">
+                    <div class="contact-info">
+                        <div class="contact-info-item contact-address">
+                            <img class="filter-white" src="/graphics/pin.svg">
+                            Alsina 1216, Bahía Blanca
+                        </div>
+                        <div class="contact-info-item contact-mail">
+                            <img class="filter-white" src="/graphics/email.svg">
+                            hdseguridadehigiene@gmail.com
+                        </div>
+                        <div class="contact-info-item contact-phone">
+                            <img class="filter-white" src="/graphics/phone.svg">
+                            +54 291 522-6885
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4141735978023!2d-62.2525122!3d-38.708299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda39a92172f17%3A0x1bbd2160d0a3a348!2sHD%20Seguridad%20e%20Higiene%20y%20Obras%20Civiles!5e0!3m2!1ses-419!2sar!4v1642540559731!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-contact">
+                <span class ="footer-contact-title">Contacto:<br></span>
+                <span class ="footer-contact-item">Alsina 1216, Bahía Blanca<br></span>
+                <span class ="footer-contact-item">+54 291 522-6885<br></span>
+                <span class ="footer-contact-item">hdseguridadehigiene@gmail.com<br></span>
+                <span class ="footer-contact-item">
+					<a href="https://facebook.com/profile.php?id=100094762256429" target="_blank"><img class="filter-white" src="/graphics/facebook-circle.svg"></a>
+					<a href="https://instagram.com/hd.hys.obracivil" target="_blank"><img class="filter-white" src="/graphics/instagram.svg"></a>
+				</span>
+            </div>
+            <div class="footer-menu">
+                <a href="/">Inicio</a>
+                <a href="/#nosotros">Nosotros</a>
+                <a href="/#servicios">Servicios</a>
+                <a href="/#contacto">Contacto</a>
+            </div>
+        </footer>
+        <a class="scroll-up" href="#"><img src="/graphics/arrowup.svg"></a>
+        <a class="media facebook" href="https://facebook.com/profile.php?id=100094762256429" target="_blank">
+            <div class="media-bg"></div>
+            <img class="filter-facebook" src="/graphics/logo-facebook.svg">
+        </a>
+        <a class="media instagram" href="https://instagram.com/hd.hys.obracivil" target="_blank">
+            <div class="media-bg"></div>
+            <img class="" src="/graphics/logo-instagram-color.svg">
+        </a>
+        <a class="media whatsapp" href="https://api.whatsapp.com/send?phone=542915226885&text=Hola%2C%20quisiera%20saber%20acerca%20de..." target="_blank">
+            <div class="media-bg"></div>
+            <img class="filter-whatsapp" src="/graphics/whatsapp.svg">
+        </a>
+        <script src="/main.js"></script>
+    </body>
+</html>

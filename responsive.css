@@ -1,0 +1,151 @@
+@media (max-width: 900px) {
+    .header-logo-subtitle {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-logo-separator, .header-logo-text, .header-nav-item {
+        display: none;
+    }
+
+    .header-nav-drop-down-button * {
+        display: block;
+    }
+
+    .info-text {
+        font-size: 16px;
+    }
+
+    /*
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact * {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    */
+
+    .contact-map {
+        margin-left: 0px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .categories .category {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-title {
+        font-size: 56px;
+    }
+
+    .banner-subtitle {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .footer {
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        flex-wrap: initial;
+    }
+
+    .footer div {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer div:last-child {
+        margin-bottom: 0px;
+    }
+
+    .footer-contact-item {
+        margin-left: 0;
+    }
+
+
+    .linear-gradient-left .info-text {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    .linear-gradient-right .info-text {
+        line-height: 24px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 512px) {
+    .banner-title {
+        font-size: 40px;
+    }
+
+    .banner-subtitle {
+        font-size: 36px;
+    }
+
+    #description5 {
+        background-position: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-map-container {
+        margin-top: 40px;
+    }
+
+    .linear-gradient-left .info-text {
+        margin-left: 10px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .linear-gradient-right .info-text {
+        margin-right: 10px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner-subtitle {
+        font-size: 30px;
+    }
+
+    .contact-map {
+        width: 96%;
+        height: auto;
+    }
+
+    #description5 {
+        background-position: initial;
+    }
+}
+
+@media (max-width: 256px) {
+    .linear-gradient-left .info-text {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    
+    .linear-gradient-right .info-text {
+        line-height: 18px;
+        font-size: 12px;
+    }
+}
+
