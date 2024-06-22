@@ -80,7 +80,7 @@
     color: white;
     justify-content: center;
     background-color: gray;
-    background-image: url('/graphics/banner-bg1.png');
+    background-image: url('./graphics/banner-bg1.png');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
