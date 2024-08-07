@@ -116,10 +116,18 @@
                 align-items: center;
             }
 
+            .contact-info-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
             .contact-info {
                 background-color: rgba(100, 100, 100, 0.2);
                 color: white;
                 margin-bottom: 20px;
+                margin-left: 5px;
+                margin-right: 5px;
             }
 
             .contact-info-item {
@@ -205,7 +213,7 @@
                 <div class="info" id="description1">
                     <h1 class="info-title">¿Quiénes Somos?</h1>
                     <div class="info-text text-justify" style="padding-bottom: 70px;">
-                        HD Seguridad y Obras, es una empresa unipersonal, dedicada a brindar Servicios de Seguridad, Higiene y Control Ambiental - Proyecto y Dirección Técnica de Obras Civiles, teniendo como Política de trabajo las normas internacionales <b>ISO 9001 – ISO 45001 e ISO 14001</b>, con matrícula habilitante en la provincia de Neuquén, <b>Buenos Aires (Distrito VI) y Rio Negro</b>, tanto en el rubro de la construcción, como en establecimientos educativos, comercios, empresas de construcción y servicios generales. Nuestro principal objetivo es brindar el mejor asesoramiento, dando soluciones acordes a la necesidad de cada cliente.
+                        HD Seguridad y Obras, es una empresa unipersonal, dedicada a brindar Servicios de Seguridad, Higiene y Control Ambiental - Proyecto y Dirección Técnica de Obras Civiles, teniendo como Política de trabajo las normas internacionales <b>ISO 9001 – ISO 45001 e ISO 14001</b>, con matrícula habilitante en la provincia de <b>Neuquén, Río Negro y Buenos Aires (Distrito VI)</b>, tanto en el rubro de la construcción, como en establecimientos educativos, comercios, empresas de construcción y servicios generales. Nuestro principal objetivo es brindar el mejor asesoramiento, dando soluciones acordes a la necesidad de cada cliente.
                     </div>
                 </div>
                 <div class="info linear-info" id="description2">
@@ -259,22 +267,34 @@
             <section class="site-contact" id="contacto">
                 <h1 class="info-title">Contacto</h1>
                 <div class="contact">
-                    <div class="contact-info">
-                        <div class="contact-info-item contact-address">
-                            <img class="filter-white" src="./graphics/pin.svg">
-                            Alsina 1216, Bahía Blanca
+                    <div class="contact-info-container">
+                        <div class="contact-info">
+                            <div class="contact-info-item contact-mail">
+                                <img class="filter-white" src="./graphics/email.svg">
+                                hdseguridadehigiene@gmail.com
+                            </div>
+                            <div class="contact-info-item contact-phone">
+                                <img class="filter-white" src="./graphics/phone.svg">
+                                +54 299 427-6838
+                            </div>
+                            <div class="contact-info-item contact-phone">
+                                <img class="filter-white" src="./graphics/phone.svg">
+                                +54 291 468-8924
+                            </div>
                         </div>
-                        <div class="contact-info-item contact-mail">
-                            <img class="filter-white" src="./graphics/email.svg">
-                            hdseguridadehigiene@gmail.com
-                        </div>
-                        <div class="contact-info-item contact-phone">
-                            <img class="filter-white" src="./graphics/phone.svg">
-                            +54 299 427-6838
-                        </div>
-                        <div class="contact-info-item contact-phone">
-                            <img class="filter-white" src="./graphics/phone.svg">
-                            +54 299 468-8924
+                        <div class="contact-info">
+                            <div class="contact-info-item contact-address">
+                                <img class="filter-white" src="./graphics/pin.svg">
+                                Buenos Aires 373, Neuquén
+                            </div>
+                            <div class="contact-info-item contact-address">
+                                <img class="filter-white" src="./graphics/pin.svg">
+                                Avenida Roca 1277, General Roca, Rio Negro
+                            </div>
+                            <div class="contact-info-item contact-address">
+                                <img class="filter-white" src="./graphics/pin.svg">
+                                Alsina 1216, Bahía Blanca (Distrito VI), Buenos Aires
+                            </div>
                         </div>
                     </div>
                     <div class="contact-map">
@@ -287,9 +307,8 @@
         <footer class="footer">
             <div class="footer-contact">
                 <span class ="footer-contact-title">Contacto:<br></span>
-                <span class ="footer-contact-item">Alsina 1216, Bahía Blanca<br></span>
+                <span class ="footer-contact-item">Buenos Aires 373, Neuquén<br></span>
                 <span class ="footer-contact-item">+54 299 427-6838<br></span>
-                <span class ="footer-contact-item">+54 299 468-8924<br></span>
                 <span class ="footer-contact-item">hdseguridadehigiene@gmail.com<br></span>
                 <!-- <span class ="footer-contact-item">
 					<a href="https://facebook.com/profile.php?id=100094762256429" target="_blank"><img class="filter-white" src="./graphics/facebook-circle.svg"></a>
