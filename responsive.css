@@ -88,6 +88,26 @@
         line-height: 24px;
         font-size: 18px;
     }
+
+    .contact-info-container {
+        flex-direction: column;
+    }
+
+    .locations-container {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .location-column {
+        width: auto;
+    }
+
+    .location-img-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media (max-width: 512px) {

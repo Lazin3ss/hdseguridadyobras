@@ -159,6 +159,38 @@
             #description4 {background-image: url('/graphics/description4.jpg');}
             #description5 {background-image: url('/graphics/description5.jpg'); background-position: 220px;}
         </style>
+        <style>
+            /* Location columns*/
+            .locations-container {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .location-column {
+                width: 33%;
+                text-align: center;
+                align-items: center;
+            }
+
+            .location-column img {
+                width: 50%;
+            }
+
+            .location-title {
+                font-size: 32px;
+            }
+
+            .location-column p {
+                font-size: 20px;
+            }
+        </style>
+        <style>
+            /* Payment Methods*/
+
+            .payment-icons img {
+                width: 25%;
+            }
+        </style>
         <link href="./responsive.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
@@ -216,6 +248,30 @@
                         HD Seguridad y Obras, es una empresa unipersonal, dedicada a brindar Servicios de Seguridad, Higiene y Control Ambiental - Proyecto y Dirección Técnica de Obras Civiles, teniendo como Política de trabajo las normas internacionales <b>ISO 9001 – ISO 45001 e ISO 14001</b>, con matrícula habilitante en la provincia de <b>Neuquén, Río Negro y Buenos Aires (Distrito VI)</b>, tanto en el rubro de la construcción, como en establecimientos educativos, comercios, empresas de construcción y servicios generales. Nuestro principal objetivo es brindar el mejor asesoramiento, dando soluciones acordes a la necesidad de cada cliente.
                     </div>
                 </div>
+                <h1 class="info-title">Brindamos servicios en las siguientes localizaciones:</h1>
+                <div class="info locations-container" style="padding-bottom: 70px;">
+                    <div class="location-column" id="neuquen">
+                        <h2 class="location-title">Neuquén</h2>
+                        <div class="location-img-text">
+                            <img src="/graphics/neuquen.svg">
+                            <p>Neuquén Capital – Plottier – Centenario – Senillosa – Añelo –    Cutral Co – Zapala</p>
+                        </div>
+                    </div>
+                    <div class="location-column" id="rionegro">
+                        <h2 class="location-title">Río Negro</h2>
+                        <div class="location-img-text">
+                            <img src="/graphics/rionegro.svg">
+                            <p>Viedma – Las Grutas – Sierra Grande – San Antonio Oeste – General Conesa – Rio Colorado – Cipolletti – Cinco Saltos -  Fernández Oro – Allen – General Roca</p>
+                        </div>
+                    </div>
+                    <div class="location-column" id="baires">
+                        <h2 class="location-title">Buenos Aires Distrito VI</h2>
+                        <div class="location-img-text">
+                            <img src="/graphics/baires.svg">
+                            <p>Bahía Blanca - Coronel Dorrego - Coronel Pringles - Coronel Rosales - Coronel Suárez - General Lamadrid - Monte Hermoso – Necochea – Patagones – Puán – Saavedra - San Cayetano - Tres Arroyos – Tornquist – Villarino</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="info linear-info" id="description2">
                     <div class="linear-gradient-right">
                         <div class="info-text text-right">
@@ -262,6 +318,20 @@
                             <div class="category-readmore">Leer más</div>
                         </a>
                     </div>
+                </div>
+            </section>
+            <section class="pay-methods" style="padding-bottom: 70px;">
+                <h1 class="info-title">Aceptamos todos los métodos de pago</h1>
+                <div class="payment-icons">
+                    <img src="/graphics/pay-mercadopago.png">
+                    <br>
+                    <img src="/graphics/pay-visa.svg" style="width: 8%;">
+                    <img src="/graphics/pay-mastercard.svg" style="width: 8%;">
+                    <img src="/graphics/pay-americanexpress.svg" style="width: 8%;">
+                    <img src="/graphics/pay-cabal.png" style="width: 8%; padding-bottom: 1.5%;">
+                    <img src="/graphics/pay-banelco.jpg" style="width: 13%; padding-bottom: 0.5%;">
+                    <img src="/graphics/pay-rapipago.png" style="width: 8%; padding-bottom: 3.5%;">
+                    <img src="/graphics/pay-pagofacil.png" style="width: 8%;">
                 </div>
             </section>
             <section class="site-contact" id="contacto">
