@@ -1284,86 +1284,9 @@ a {
 .cid-uUY0sJ3UBT .item-subtitle {
   text-align: left;
 }
-.cid-sFAw7z51L3 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #192043;
-}
-.cid-sFAw7z51L3 img {
-  width: 120px;
-  margin: auto;
-}
-.cid-sFAw7z51L3 .card {
-  transition: all 0.3s;
-  height: fit-content;
-  padding: 1rem 0;
-  opacity: 0.7;
-  margin-bottom: 1rem;
-}
-@media (min-width: 992px) {
-  .cid-sFAw7z51L3 .card {
-    max-width: 12.5%;
-  }
-}
-.cid-sFAw7z51L3 .mbr-section-subtitle {
-  color: #353535;
-}
-.cid-sFAw7z51L3 .mbr-section-title {
-  color: #ffffff;
-}
-.cid-uV1NFaEt7Q {
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
-}
-.cid-uV1NFaEt7Q .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uV1NFaEt7Q .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uV1NFaEt7Q .mbr-iconfont {
-  display: block;
-  font-size: 5rem;
-  color: #192043;
-  margin-bottom: 2rem;
-}
-.cid-uV1NFaEt7Q .card-wrapper {
-  padding: 3rem;
-  background: #192043;
-  border-radius: 4px;
-}
-@media (max-width: 992px) {
-  .cid-uV1NFaEt7Q .card-wrapper {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 767px) {
-  .cid-uV1NFaEt7Q .card-wrapper {
-    padding: 3rem 1rem;
-  }
-}
-.cid-uV1NFaEt7Q .mbr-section-title {
-  color: #ffffff;
-}
-.cid-uV1NFaEt7Q .card-title {
-  color: #ffffff;
-}
-.cid-uV1NFaEt7Q .mbr-text {
-  color: #ffffff;
-}
-.cid-uV1NFaEt7Q .link {
-  color: #ffffff;
-}
 .cid-uV1OKESqxJ {
-  padding-top: 1rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
 }
 .cid-uV1OKESqxJ .mbr-fallback-image.disabled {
@@ -1386,7 +1309,7 @@ a {
 }
 .cid-uV1OKESqxJ .card-wrapper {
   padding: 3rem;
-  background: #192043;
+  background: #030d31;
   border-radius: 4px;
 }
 @media (max-width: 992px) {
@@ -1405,20 +1328,43 @@ a {
 .cid-uV1OKESqxJ .mbr-text {
   color: #ffffff;
 }
-.cid-sFAxp7Y5iM {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.cid-uV1OKESqxJ .mbr-section-title {
+  color: #ffffff;
+}
+.cid-v2oM8rTUgc {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
 }
-.cid-sFAxp7Y5iM .google-map {
-  height: 30rem;
+.cid-v2oM8rTUgc .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v2oM8rTUgc .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .cid-v2oM8rTUgc .row {
+    flex-direction: column-reverse;
+  }
+  .cid-v2oM8rTUgc .row .map-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+.cid-v2oM8rTUgc .google-map {
+  height: 100%;
   position: relative;
 }
-.cid-sFAxp7Y5iM .google-map iframe {
+.cid-v2oM8rTUgc .google-map iframe {
   height: 100%;
   width: 100%;
 }
-.cid-sFAxp7Y5iM .google-map [data-state-details] {
+.cid-v2oM8rTUgc .google-map [data-state-details] {
   color: #6b6763;
   height: 1.5em;
   margin-top: -0.75em;
@@ -1429,19 +1375,224 @@ a {
   top: 50%;
   width: 100%;
 }
-.cid-sFAxp7Y5iM .google-map[data-state] {
+.cid-v2oM8rTUgc .google-map[data-state] {
   background: #e9e5dc;
 }
-.cid-sFAxp7Y5iM .google-map[data-state="loading"] [data-state-details] {
+.cid-v2oM8rTUgc .google-map[data-state="loading"] [data-state-details] {
   display: none;
 }
-.cid-sFAxp7Y5iM .mbr-section-title {
+.cid-v2oM8rTUgc .image-wrapper {
+  display: flex;
+  align-items: center;
+}
+.cid-v2oM8rTUgc .card-wrapper {
+  display: flex;
+  border-radius: 4px;
+  background: #030d31;
+}
+.cid-v2oM8rTUgc .card-wrapper:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .cid-v2oM8rTUgc .card-wrapper {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-v2oM8rTUgc .card-wrapper {
+    padding: 2rem 4rem;
+  }
+}
+.cid-v2oM8rTUgc .mbr-iconfont {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: #192043;
+}
+.cid-v2oM8rTUgc .mbr-section-title {
+  color: #ffffff;
+}
+.cid-v2oM8rTUgc .card-title {
+  color: #ffffff;
+}
+.cid-v2oM8rTUgc P {
+  color: #ffffff;
+}
+.cid-v2oODx77Lm {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
+}
+.cid-v2oODx77Lm .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v2oODx77Lm .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .cid-v2oODx77Lm .row {
+    flex-direction: column-reverse;
+  }
+  .cid-v2oODx77Lm .row .map-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+.cid-v2oODx77Lm .google-map {
+  height: 100%;
+  position: relative;
+}
+.cid-v2oODx77Lm .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+.cid-v2oODx77Lm .google-map [data-state-details] {
+  color: #6b6763;
+  height: 1.5em;
+  margin-top: -0.75em;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.cid-v2oODx77Lm .google-map[data-state] {
+  background: #e9e5dc;
+}
+.cid-v2oODx77Lm .google-map[data-state="loading"] [data-state-details] {
+  display: none;
+}
+.cid-v2oODx77Lm .image-wrapper {
+  display: flex;
+  align-items: center;
+}
+.cid-v2oODx77Lm .card-wrapper {
+  display: flex;
+  border-radius: 4px;
+  background: #030d31;
+}
+.cid-v2oODx77Lm .card-wrapper:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .cid-v2oODx77Lm .card-wrapper {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-v2oODx77Lm .card-wrapper {
+    padding: 2rem 4rem;
+  }
+}
+.cid-v2oODx77Lm .mbr-iconfont {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: #192043;
+}
+.cid-v2oODx77Lm .mbr-section-title {
+  color: #ffffff;
+}
+.cid-v2oODx77Lm .card-title {
+  color: #ffffff;
+}
+.cid-v2oODx77Lm P {
+  color: #ffffff;
+}
+.cid-v2oSn508bC {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
+}
+.cid-v2oSn508bC .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-v2oSn508bC .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .cid-v2oSn508bC .row {
+    flex-direction: column-reverse;
+  }
+  .cid-v2oSn508bC .row .map-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+.cid-v2oSn508bC .google-map {
+  height: 100%;
+  position: relative;
+}
+.cid-v2oSn508bC .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+.cid-v2oSn508bC .google-map [data-state-details] {
+  color: #6b6763;
+  height: 1.5em;
+  margin-top: -0.75em;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.cid-v2oSn508bC .google-map[data-state] {
+  background: #e9e5dc;
+}
+.cid-v2oSn508bC .google-map[data-state="loading"] [data-state-details] {
+  display: none;
+}
+.cid-v2oSn508bC .image-wrapper {
+  display: flex;
+  align-items: center;
+}
+.cid-v2oSn508bC .card-wrapper {
+  display: flex;
+  border-radius: 4px;
+  background: #030d31;
+}
+.cid-v2oSn508bC .card-wrapper:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .cid-v2oSn508bC .card-wrapper {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-v2oSn508bC .card-wrapper {
+    padding: 2rem 4rem;
+  }
+}
+.cid-v2oSn508bC .mbr-iconfont {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: #192043;
+}
+.cid-v2oSn508bC .mbr-section-title {
+  color: #ffffff;
+}
+.cid-v2oSn508bC .card-title {
+  color: #ffffff;
+}
+.cid-v2oSn508bC P {
   color: #ffffff;
 }
 .cid-uUYy9G2cUK {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #030d31;
   overflow: hidden;
 }
 .cid-uUY9YDt6Su {
@@ -2022,9 +2173,9 @@ a {
   text-align: left;
 }
 .cid-uUYy9G2cUK {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #030d31;
   overflow: hidden;
 }
 .cid-uUY9UzKKOm {
@@ -2504,9 +2655,9 @@ a {
   text-align: left;
 }
 .cid-uUYy9G2cUK {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #030d31;
   overflow: hidden;
 }
 .cid-uV2VC8V6JU {
@@ -3015,8 +3166,8 @@ a {
   text-align: left;
 }
 .cid-uV2VCd9rz4 {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #030d31;
   overflow: hidden;
 }
