@@ -2056,30 +2056,6 @@ a {
   color: #ffffff;
   text-align: left;
 }
-.cid-uV2GODP2au {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-image: url("../../../assets/images/h.d-seguridad-e-higiene-ambiental-fondo.webp");
-}
-.cid-uV2GODP2au .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uV2GODP2au .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uV2GODP2au .mbr-section-title {
-  color: #ffffff;
-}
-.cid-uV2GODP2au .mbr-section-subtitle {
-  color: #ffffff;
-  text-align: left;
-}
 .cid-uV2GXzBgZF {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -2171,6 +2147,7 @@ a {
 }
 .cid-uV2HDA2OnG .mbr-section-title {
   color: #ffffff;
+  text-align: justify;
 }
 .cid-uV2HDA2OnG .mbr-section-subtitle {
   color: #ffffff;
