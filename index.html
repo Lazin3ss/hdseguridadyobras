@@ -49,394 +49,13 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-        :root {
-            --primary-blue: #0f172a; 
-            --accent-blue: #2563eb;
-            --text-light: #f8fafc;
-            --text-muted: #94a3b8;
-            --white: #ffffff;
-            --success: #22c55e;
-            --overlay: rgba(15, 23, 42, 0.8);
-        }
+    <!-- Estilo General Externo -->
+    <link rel="stylesheet" href="style.css">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-light);
-            background-color: var(--primary-blue);
-        }
-
-        /* Configuración Universal Parallax */
-        .parallax-section {
-            background-image: url('imgs/H.D-Seguridad-e-Higiene-Ambiental-fondo.jpg');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .parallax-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--overlay);
-            z-index: 1;
-        }
-
-        .parallax-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.8rem 1.5rem;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            gap: 10px;
-        }
-
-        .btn-primary { background-color: var(--accent-blue); color: white; }
-        .btn-primary:hover { background-color: #1d4ed8; transform: translateY(-2px); }
-        .btn-wa { background-color: var(--success); color: white; }
-        .btn-wa:hover { background-color: #16a34a; transform: translateY(-2px); }
-
-        /* Botón Volver Arriba */
-        #btn-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: var(--accent-blue);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-            z-index: 2000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        #btn-to-top:hover {
-            transform: translateY(-5px);
-            background-color: #1d4ed8;
-        }
-
-        header {
-            background: rgba(15, 23, 42, 0.90);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo-nav {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .logo-nav:hover { color: var(--accent-blue); }
-
-        .hero {
-            padding: 200px 0 140px;
-            text-align: center;
-        }
-
-        .hero-logo {
-            max-width: 450px;
-            height: auto;
-            margin-bottom: 2rem;
-            filter: drop-shadow(0 0 15px rgba(0,0,0,0.6));
-        }
-
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1.2rem;
-            line-height: 1.1;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            color: var(--text-muted);
-            max-width: 750px;
-            margin: 0 auto 2.5rem;
-        }
-
-        .profile-container {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .profile-image-wrapper {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .profile-image {
-            width: 320px;
-            height: 320px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 8px solid rgba(37, 99, 235, 0.2);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-            z-index: 2;
-        }
-
-        .profile-decoration {
-            position: absolute;
-            width: 340px;
-            height: 340px;
-            border-radius: 50%;
-            border: 2px dashed var(--accent-blue);
-            top: -10px;
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        section { padding: 120px 0; }
-
-        h2 {
-            font-size: 2.4rem;
-            margin-bottom: 4rem;
-            text-align: center;
-        }
-
-        h2::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: var(--accent-blue);
-            margin: 15px auto 0;
-        }
-
-        .service-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 2.5rem;
-            border-radius: 16px;
-            transition: all 0.4s ease;
-            height: 100%;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--accent-blue);
-        }
-
-        .service-card i {
-            font-size: 2.5rem;
-            color: var(--accent-blue);
-            margin-bottom: 1.5rem;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .matriculas {
-            background: rgba(37, 99, 235, 0.15);
-            padding: 2rem;
-            border-radius: 12px;
-            border-left: 5px solid var(--accent-blue);
-            margin-top: 2rem;
-        }
-
-        .matriculas ul { list-style: none; margin-top: 1rem; }
-        .matriculas li { margin-bottom: 0.8rem; display: flex; align-items: center; gap: 12px; }
-
-        /* Estilos para el Modal de Mapa */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 3000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.8);
-            backdrop-filter: blur(5px);
-        }
-
-        .modal-content {
-            background-color: var(--primary-blue);
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid var(--accent-blue);
-            width: 90%;
-            max-width: 800px;
-            border-radius: 16px;
-            position: relative;
-            box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
-        }
-
-        .close-modal {
-            color: var(--white);
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-
-        .close-modal:hover {
-            color: var(--accent-blue);
-        }
-
-        .map-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-
-        .map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        footer {
-            padding: 20px 0 20px;
-            background: #020617;
-            text-align: center;
-        }
-
-        .footer-logo {
-            max-width: 70px;
-            margin-bottom: 2rem;
-            border-radius: 10px;
-        }
-
-        .social-links {
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-        }
-
-        .social-links a {
-            color: var(--text-muted);
-            font-size: 1.8rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-blue);
-            transform: scale(1.2);
-        }
-
-        .footer-credits {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-top: 1.5rem;
-        }
-
-        .footer-credits a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .footer-legal {
-            margin-top: 2rem;
-            font-size: 0.85rem;
-        }
-
-        .footer-legal a {
-            color: var(--text-muted);
-            text-decoration: none;
-            padding-bottom: 2px;
-            border-bottom: 1px solid transparent;
-        }
-
-        .footer-legal a:hover {
-            color: var(--white);
-            border-bottom-color: var(--white);
-        }
-
-        @media (max-width: 992px) {
-            .profile-container { grid-template-columns: 1fr; text-align: center; }
-            .profile-image-wrapper { margin-bottom: 3rem; order: -1; }
-            .hero h1 { font-size: 2.5rem; }
-        }
-
-        @media (max-width: 768px) {
-            .parallax-section { background-attachment: scroll; }
-            .hero { padding: 150px 0 100px; }
-            .profile-image { width: 250px; height: 250px; }
-            .profile-decoration { width: 270px; height: 270px; }
-            #btn-to-top { bottom: 20px; right: 20px; width: 45px; height: 45px; }
-        }
-    </style>
 </head>
 <body>
 
+    <!-- Botón Volver Arriba -->
     <button id="btn-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver arriba">
         <i class="fas fa-chevron-up"></i>
     </button>
@@ -452,9 +71,10 @@
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero parallax-section">
         <div class="container parallax-content">
-            <img src="imgs/LOGO-SeguridadHigieneyMedioAmbiente.png" alt="Logo HD Seguridad y Obras" class="hero-logo">
+            <img src="imgs/LOGO-SeguridadHigieneyMedioAmbiente.png" alt="Logo HD" class="hero-logo">
             <h1>Seguridad, Higiene y Gestión Ambiental</h1>
             <p>Asesoramiento técnico profesional para comercios, industrias y obras.</p>
             <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px; margin: 0 auto 2.5rem;">Servicios profesionales orientados a la evaluación, control y mejora de las condiciones de trabajo y del desempeño ambiental, conforme a la normativa vigente, brindando soluciones técnicas adaptadas a cada actividad.</p>
@@ -469,6 +89,7 @@
         </div>
     </section>
 
+    <!-- TRAYECTORIA PROFESIONAL -->
     <section id="quienes-somos" class="parallax-section">
         <div class="container parallax-content">
             <div class="profile-container">
@@ -479,25 +100,30 @@
                     
                     <div class="matriculas">
                         <h3>Responsable Profesional: Hugo Roberto Díaz</h3>
+                        <p style="font-weight: 600; color: var(--accent-blue); margin-bottom: 1.5rem;">Licenciado en Seguridad, Higiene y Gestión Ambiental</p>
+                        
+                        <p style="font-weight: 700; color: var(--white); margin-bottom: 0.5rem; font-size: 0.9rem;">Matrículas Profesionales:</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>• Provincia del Neuquén – CIN N.º 1074</li>
+                            <li>• Provincia de Buenos Aires – LHS-002379</li>
+                            <li>• Provincia de Río Negro – B1-2121-2</li>
+                        </ul>
+                        
+                        <p style="font-weight: 700; color: var(--white); margin-bottom: 0.5rem; font-size: 0.9rem;">Formación Técnica Complementaria:</p>
                         <ul>
-                            <li><i class="fas fa-certificate"></i> Licenciado en Seguridad, Higiene y Gestión Ambiental</li>
-                            <li><i class="fas fa-id-card"></i> Matrículas Profesionales:</li>
-                            <li style="margin-left: 20px; font-size: 0.9rem; opacity: 0.9;">•	Provincia del Neuquén – CIN N.º 1074</li>
-                            <li style="margin-left: 20px; font-size: 0.9rem; opacity: 0.9;">•	Provincia de Buenos Aires – LHS-002379</li>
-                            <li style="margin-left: 20px; font-size: 0.9rem; opacity: 0.9;">•	Provincia de Río Negro – B1-2121-2</li>
-                            <li><i class="fas fa-drafting-compass"></i> Formación Técnica Complementaria:</li>
-                            <li style="margin-left: 20px; font-size: 0.9rem; opacity: 0.9;">•	Técnico Constructor – Matrícula TECA N.º 602</li>
+                            <li>• Técnico Constructor – Matrícula TECA N.º 602</li>
                         </ul>
                     </div>
                 </div>
                 <div class="profile-image-wrapper">
                     <div class="profile-decoration"></div>
-                    <img src="imgs/LOGO-Redondo_HD-SHyMH.png" alt="HD Seguridad y Obras" class="profile-image">
+                    <img src="imgs/LOGO-Redondo_HD-SHyMH.png" alt="Lic. Hugo Roberto Díaz" class="profile-image">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SERVICIOS -->
     <section id="servicios" class="parallax-section">
         <div class="container parallax-content">
             <h2>Especialidades y Servicios</h2>
@@ -534,7 +160,7 @@
                 </div>
             </div>
 
-            <!-- COMPLEMENTO TÉCNICO -->
+            <!-- ENLACES TÉCNICOS DETALLADOS -->
             <div style="margin-top: 5rem;">
                 <h2 style="font-size: 1.8rem; margin-bottom: 3rem;">Seguridad, Higiene y Gestión Ambiental</h2>
                 <div class="grid-2">
@@ -553,6 +179,73 @@
         </div>
     </section>
 
+    <!-- METODOLOGÍA DE TRABAJO -->
+    <section id="metodologia" class="parallax-section">
+        <div class="container parallax-content">
+            <h2>Metodología de Trabajo</h2>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+                <p>HD Seguridad y Obras desarrolla sus servicios bajo una metodología técnica estructurada, orientada al cumplimiento normativo, la prevención de riesgos y la mejora continua, garantizando trazabilidad, respaldo documental y responsabilidad profesional en cada intervención.</p>
+            </div>
+            
+            <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem; color: var(--accent-blue);">Etapas del Proceso de Trabajo</h3>
+            
+            <div class="grid-3">
+                <div class="tech-card">
+                    <span class="tech-title">1. Relevamiento Técnico Inicial</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Visita a campo y recopilación de información técnica, documental y operativa. Identificación de procesos y aspectos ambientales relevantes.</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-title">2. Análisis Normativo y Técnico</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Evaluación del cumplimiento de Ley 19.587, Dec. 351/79, normativas SRT e internacionales ISO (45001, 14001, 9001).</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-title">3. Diagnóstico Profesional</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Determinación de desvíos, no conformidades, riesgos laborales y ambientales, priorizados según criticidad y marco legal.</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-title">4. Elaboración de Documentación</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Confección de informes técnicos, programas, actas y memorias descriptivas exigidas por organismos de control.</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-title">5. Asesoramiento Técnico</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Explicación clara de resultados, recomendaciones y medidas correctivas orientadas a la toma de decisiones efectiva.</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-title">6. Seguimiento y Actualización</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Acompañamiento técnico y actualización de la documentación ante inspecciones, auditorías o nuevos requerimientos oficiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENTACIÓN TÉCNICA -->
+    <section id="documentacion" class="parallax-section">
+        <div class="container parallax-content">
+            <h2>Documentación Técnica Entregable</h2>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+                <p>Todos los servicios prestados por HD Seguridad y Obras incluyen la entrega de documentación técnica profesional, elaborada conforme a la normativa vigente y apta para ser presentada ante organismos de control.</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.02); padding: 3rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+                <ul class="doc-list">
+                    <li><i class="fas fa-file-invoice"></i> Informes técnicos de Seguridad e Higiene.</li>
+                    <li><i class="fas fa-check-double"></i> Auditorías de cumplimiento legal.</li>
+                    <li><i class="fas fa-project-diagram"></i> Programas de Seguridad e Higiene.</li>
+                    <li><i class="fas fa-clipboard-check"></i> Actas de inspección y relevamiento.</li>
+                    <li><i class="fas fa-leaf"></i> Informes de Residuos Peligrosos.</li>
+                    <li><i class="fas fa-fire-extinguisher"></i> Memorias técnicas de protección.</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> Análisis de riesgos laborales.</li>
+                    <li><i class="fas fa-door-open"></i> Planes de emergencia y evacuación.</li>
+                    <li><i class="fas fa-university"></i> Documentación para ART y Municipios.</li>
+                </ul>
+                <div style="margin-top: 3rem; text-align: center; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 2rem;">
+                    <p style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">Toda la documentación es emitida con <strong>firma profesional, matrícula habilitante y trazabilidad técnica</strong>, garantizando respaldo legal y responsabilidad profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
     <section id="contacto" class="parallax-section">
         <div class="container parallax-content">
             <div style="max-width: 900px; margin: 0 auto;">
@@ -575,11 +268,11 @@
         </div>
     </section>
 
+    <!-- UBICACIONES -->
     <section id="ubicaciones" class="parallax-section">
         <div class="container parallax-content">
             <h2>Presencia Regional</h2>
             <div class="grid-3">
-                <!-- TARJETA INTERACTIVA NEUQUEN -->
                 <div class="service-card" onclick="openMap('neuquen')" style="cursor: pointer; border-color: rgba(37, 99, 235, 0.5);">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Provincia de Neuquén</h3>
@@ -587,8 +280,6 @@
                     <p style="color: var(--text-muted);"><strong>Localidad:</strong><br>Ciudad de Neuquén</p>
                     <p style="color: var(--accent-blue); font-size: 0.8rem; margin-top: 15px; font-weight: 600;"><i class="fas fa-search-plus"></i> VER MAPA</p>
                 </div>
-                
-                <!-- TARJETA INTERACTIVA RIO NEGRO -->
                 <div class="service-card" onclick="openMap('rionegro')" style="cursor: pointer; border-color: rgba(37, 99, 235, 0.5);">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Provincia de Río Negro</h3>
@@ -596,8 +287,6 @@
                     <p style="color: var(--text-muted);"><strong>Localidad:</strong><br>Ciudad de General Roca</p>
                     <p style="color: var(--accent-blue); font-size: 0.8rem; margin-top: 15px; font-weight: 600;"><i class="fas fa-search-plus"></i> VER MAPA</p>
                 </div>
-
-                <!-- TARJETA INTERACTIVA BUENOS AIRES -->
                 <div class="service-card" onclick="openMap('buenosaires')" style="cursor: pointer; border-color: rgba(37, 99, 235, 0.5);">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Provincia de Buenos Aires</h3>
@@ -609,15 +298,13 @@
         </div>
     </section>
 
-    <!-- ESTRUCTURA DEL MODAL DINÁMICO -->
+    <!-- MODAL MAPA -->
     <div id="mapModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeMap()">&times;</span>
             <h3 id="modalTitle" style="color: var(--white); margin-bottom: 10px;"></h3>
             <p id="modalAddress" style="color: var(--text-muted); font-size: 0.9rem;"></p>
-            <div class="map-container" id="modalMapBody">
-                <!-- Iframe se inyecta aquí dinámicamente -->
-            </div>
+            <div class="map-container" id="modalMapBody"></div>
         </div>
     </div>
 
@@ -627,29 +314,16 @@
             <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Lic. Hugo Roberto Díaz</p>
             <p style="color: var(--text-muted); margin-bottom: 2rem;">Especialista en Seguridad, Higiene y Gestión Ambiental</p>
             <div class="footer-credits">
-                Desarrollo & Diseño por <a href="https://navonejuan.com.ar" target="_blank" rel="noopener noreferrer" title="Navone Juan | Soluciones Informáticas">Navone Juan</a> | <a href="privacidad.html" title="Política de Privacidad">Política de Privacidad</a>
+                Desarrollo & Diseño por <a href="https://navonejuan.com.ar" target="_blank" rel="noopener noreferrer">Navone Juan</a> | <a href="privacidad.html">Política de Privacidad</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Datos de mapas para el modal
         const mapData = {
-            neuquen: {
-                title: "Ubicación Neuquén",
-                address: "Calle Buenos Aires Nº 373, Ciudad de Neuquén",
-                iframe: '<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.647952251235!2d-68.05804869756676!3d-38.95115994353151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda39a92172f17%3A0x1bbd2160d0a3a348!2sHD%20Seguridad%2C%20Higiene%20y%20Medio%20Ambiente.!5e0!3m2!1ses-419!2sar!4v1763006649235!5m2!1ses-419!2sar" allowfullscreen=""></iframe>'
-            },
-            rionegro: {
-                title: "Ubicación Río Negro",
-                address: "Avenida Julio A. Roca Nº 1277, Ciudad de General Roca",
-                iframe: '<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2321.872661966556!2d-67.57654147062227!3d-39.03063557199085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a1d2dfa422727%3A0x103114e54f21a7c1!2sAv.%20Gral.%20Julio%20Argentino%20Roca%201277%2C%20R8332%20Gral.%20Roca%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1763007092768!5m2!1ses-419!2sar" allowfullscreen=""></iframe>'
-            },
-            buenosaires: {
-                title: "Ubicación Buenos Aires",
-                address: "Avenida 13 N°63 entre calles 33 y 34, Ciudad de La Plata",
-                iframe: '<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2183.770340394007!2d-57.97479324295766!3d-34.90748730336486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7ba980c425b%3A0xc92875289d3ef1d0!2sAv.%2013%2063%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1763007554064!5m2!1ses-419!2sar" allowfullscreen=""></iframe>'
-            }
+            neuquen: { title: "Ubicación Neuquén", address: "Calle Buenos Aires Nº 373, Ciudad de Neuquén", iframe: '<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.647952251235!2d-68.05804869756676!3d-38.95115994353151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda39a92172f17%3A0x1bbd2160d0a3a348!2sHD%20Seguridad%2C%20Higiene%20y%20Medio%20Ambiente.!5e0!3m2!1ses-419!2sar!4v1763006649235!5m2!1ses-419!2sar" allowfullscreen=""></iframe>' },
+            rionegro: { title: "Ubicación Río Negro", address: "Avenida Julio A. Roca Nº 1277, Ciudad de General Roca", iframe: '<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2321.872661966556!2d-67.57654147062227!3d-39.03063557199085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a1d2dfa422727%3A0x103114e54f21a7c1!2sAv.%20Gral.%20Julio%20Argentino%20Roca%201277%2C%20R8332%20Gral.%20Roca%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1763007092768!5m2!1ses-419!2sar" allowfullscreen=""></iframe>' },
+            buenosaires: { title: "Ubicación Buenos Aires", address: "Avenida 13 N°63 entre calles 33 y 34, Ciudad de La Plata", iframe: '<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2183.770340394007!2d-57.97479324295766!3d-34.90748730336486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7ba980c425b%3A0xc92875289d3ef1d0!2sAv.%2013%2063%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1763007554064!5m2!1ses-419!2sar" allowfullscreen=""></iframe>' }
         };
 
         const btnToTop = document.getElementById("btn-to-top");
@@ -679,15 +353,11 @@
 
         function closeMap() {
             modal.style.display = "none";
-            modalMapBody.innerHTML = ""; // Limpia iframe para liberar memoria
+            modalMapBody.innerHTML = "";
             document.body.style.overflow = "auto";
         }
 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                closeMap();
-            }
-        }
+        window.onclick = function(event) { if (event.target == modal) closeMap(); }
     </script>
 
 </body>

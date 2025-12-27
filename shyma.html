@@ -8,7 +8,6 @@
     <title>Seguridad, Higiene y Gestión Ambiental | Lic. Hugo Roberto Díaz</title>
     
     <!-- Analytics -->
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ9FCEE5HJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,305 +15,21 @@
       gtag('js', new Date());
       gtag('config', 'G-GQ9FCEE5HJ');
     </script>
-    <!-- /Analytics -->
-
-    <!-- Metadatos SEO -->
-    <meta name="description" content="Servicios de Seguridad, Higiene y Gestión Ambiental. Sistema de Gestión Integrado bajo Normas ISO 45001, 14001 y 9001. Lic. Hugo Roberto Díaz.">
-    <meta name="keywords" content="seguridad e higiene, gestion ambiental, iso 45001, iso 14001, iso 9001, srt, auditorias, medio ambiente, hugo diaz">
     
-    <!-- Favicon -->
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Servicios profesionales de Seguridad, Higiene y Gestión Ambiental. Sistema de Gestión Integrado bajo Normas ISO 45001, 14001 y 9001.">
     <link rel="shortcut icon" href="imgs/LOGO-Redondo_HD-SHyMH.png" type="image/png">
-	
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Lic. Hugo Roberto Díaz | Seguridad, Higiene y Gestión Ambiental">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hdseguridadyobras.com.ar">
-    <meta property="og:image" content="https://hdseguridadyobras.com.ar/imgs/Logo_HD.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="800">
-    <meta property="og:image:secure_url" itemprop="image" content="https://hdseguridadyobras.com.ar/imgs/Logo_HD_SHMH.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lic. Hugo Roberto Díaz | Seguridad, Higiene y Gestión Ambiental">
-    <meta name="twitter:image" content="https://hdseguridadyobras.com.ar/imgs/Logo_HD.jpg">
-    <meta property="twitter:image:width" content="1200">
-    <meta property="twitter:image:height" content="800">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-        :root {
-            --primary-blue: #0f172a; 
-            --accent-blue: #2563eb;
-            --text-light: #f8fafc;
-            --text-muted: #94a3b8;
-            --white: #ffffff;
-            --success: #22c55e;
-            --overlay: rgba(15, 23, 42, 0.8);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-light);
-            background-color: var(--primary-blue);
-        }
-
-        /* Configuración Universal Parallax */
-        .parallax-section {
-            background-image: url('imgs/H.D-Seguridad-e-Higiene-Ambiental-fondo.jpg');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .parallax-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--overlay);
-            z-index: 1;
-        }
-
-        .parallax-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        header {
-            background: rgba(15, 23, 42, 0.90);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo-nav {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-        }
-
-        .nav-right-links {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .nav-wa {
-            color: var(--success);
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: opacity 0.3s;
-        }
-
-        .nav-wa:hover { opacity: 0.8; }
-
-        .btn-back {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .hero-inner {
-            padding: 180px 0 80px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            color: var(--white);
-            text-transform: uppercase;
-        }
-
-        .iso-intro {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--accent-blue);
-            margin-bottom: 2rem;
-        }
-
-        .intro-text {
-            max-width: 900px;
-            margin: 0 auto 3rem;
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        .iso-list {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 4rem;
-        }
-
-        .iso-item {
-            background: rgba(37, 99, 235, 0.15);
-            border: 1px solid var(--accent-blue);
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        .technical-section {
-            padding-bottom: 100px;
-        }
-
-        .technical-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 3rem;
-            border-radius: 16px;
-            margin-bottom: 3rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .technical-card h3 {
-            color: var(--accent-blue);
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 15px;
-        }
-
-        .card-intro {
-            margin-bottom: 20px;
-            font-weight: 400;
-            color: var(--white);
-        }
-
-        .grid-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .grid-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
-
-        .grid-list li i {
-            color: var(--accent-blue);
-            margin-top: 5px;
-            font-size: 0.8rem;
-        }
-
-        .single-column-list {
-            grid-template-columns: 1fr;
-        }
-
-        /* Botón Volver Arriba */
-        #btn-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: var(--accent-blue);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-            z-index: 2000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        #btn-to-top:hover {
-            transform: translateY(-5px);
-            background-color: #1d4ed8;
-        }
-
-        footer {
-            padding: 20px 0 20px;
-            background: #020617;
-            text-align: center;
-        }
-
-        .footer-logo {
-            max-width: 70px;
-            margin-bottom: 2rem;
-            border-radius: 10px;
-        }
-
-        .footer-credits {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .footer-credits a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        @media (max-width: 992px) {
-            .grid-list { grid-template-columns: 1fr; }
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8rem; }
-            .nav-wa span { display: none; }
-            .nav-right-links { gap: 15px; }
-            .hero-inner { padding-top: 140px; }
-            .technical-card { padding: 1.5rem; }
-        }
-    </style>
+    <!-- Estilo General Externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -326,102 +41,100 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo-nav">HD Seguridad y Obras</a>
-                <div class="nav-right-links">
-                    <a href="https://wa.me/5492994276838" target="_blank" rel="noopener noreferrer" class="nav-wa">
-                        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <a href="https://wa.me/5492994276838" target="_blank" rel="noopener noreferrer" class="btn btn-wa" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
-                    <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> <span>Volver</span></a>
+                    <a href="index.html" class="logo-nav" style="font-size: 0.9rem; font-weight: 500;"><i class="fas fa-arrow-left"></i> Volver</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="parallax-section">
+    <section class="hero parallax-section">
         <div class="container parallax-content">
-            <div class="hero-inner">
-                <h1>Seguridad, Higiene y Gestión Ambiental</h1>
-                <p class="iso-intro">Sistema de Gestión Integrado, Bajo las Normas ISO 45001, 14001 y 9001.</p>
-                
-                <div class="intro-text">
-                    <p>Asumimos la responsabilidad como profesionales ante los organismos de control relacionados con la Seguridad, Higiene y Protección del Medio Ambiente, dando cumplimiento con la Ley 19587 y sus Decretos Reglamentarios (351/79 como así también la ley de Riesgos del Trabajo (Ley 24.587) cumpliendo con todos los requisitos que dichas legislaciones imponen. Nuestra política de trabajo, se basa en el cumplimiento de las normas internacionales ISO:</p>
-                </div>
-
-                <div class="iso-list">
-                    <span class="iso-item">▶ ISO 45001/2018 (Gestión de Seguridad y Salud en el Trabajo)</span>
-                    <span class="iso-item">▶ ISO 14001/2015 (Gestión de Medio ambiente)</span>
-                    <span class="iso-item">▶ ISO 9001/2015 (Gestión en Control de Calidad)</span>
-                </div>
-            </div>
+            <h1>Seguridad, Higiene y Gestión Ambiental</h1>
+            <p class="tech-title" style="font-size: 1.2rem; text-transform: none;">Sistema de Gestión Integrado, Bajo las Normas ISO 45001, 14001 y 9001.</p>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 900px; margin: 2rem auto 0;">Asumimos la responsabilidad como profesionales ante los organismos de control relacionados con la Seguridad, Higiene y Protección del Medio Ambiente, dando cumplimiento con la Ley 19587 y sus Decretos Reglamentarios.</p>
         </div>
     </section>
 
-    <section class="technical-section">
-        <div class="container">
+    <section class="parallax-section" style="padding-top: 0;">
+        <div class="container parallax-content">
             
-            <!-- ISO 45001 -->
-            <div class="technical-card">
-                <h3>Sistema de Gestión en Seguridad y Salud en el Trabajo, ISO 45001</h3>
-                <div class="card-intro">
-                    <p>Confección de Programa de Seguridad, Higiene y Protección del Medio Ambiente. Investigación y seguimiento de los accidentes de vuestro personal y/o tercero, de acuerdo a la legislación vigente.</p>
+            <div class="tech-card" style="margin-bottom: 3rem;">
+                <p style="margin-bottom: 2rem;">Nuestra política de trabajo se basa en el cumplimiento de las normas internacionales ISO:</p>
+                <div class="grid-3">
+                    <div class="tech-card" style="text-align: center; border-left: none; border-bottom: 3px solid var(--accent-blue);">
+                        <span class="tech-title">ISO 45001/2018</span>
+                        <p class="text-xs">Gestión de Seguridad y Salud en el Trabajo</p>
+                    </div>
+                    <div class="tech-card" style="text-align: center; border-left: none; border-bottom: 3px solid var(--accent-blue);">
+                        <span class="tech-title">ISO 14001/2015</span>
+                        <p class="text-xs">Gestión de Medio Ambiente</p>
+                    </div>
+                    <div class="tech-card" style="text-align: center; border-left: none; border-bottom: 3px solid var(--accent-blue);">
+                        <span class="tech-title">ISO 9001/2015</span>
+                        <p class="text-xs">Gestión en Control de Calidad</p>
+                    </div>
                 </div>
-                <ul class="grid-list">
-                    <li><i class="fas fa-check"></i> Indicación de medidas de adecuación de las actividades a las normas y disposiciones vigentes.</li>
-                    <li><i class="fas fa-check"></i> Prevención de accidentes de trabajo.</li>
-                    <li><i class="fas fa-check"></i> Control de Calidad, durante todo el proyecto constructivo.</li>
-                    <li><i class="fas fa-check"></i> Confeccionar plan de emergencias (Evacuación, simulacros y socorrismo)</li>
-                    <li><i class="fas fa-check"></i> Gestión de proyectos y auditorías de instalaciones en ejecución.</li>
-                    <li><i class="fas fa-check"></i> Declaraciones Juradas SRT.</li>
-                    <li><i class="fas fa-check"></i> Elaboración de Programas de Seguridad para el Rubro de la Construcción (Resoluciones S.R.T. 051/97, 319/99 y 35/98)</li>
-                    <li><i class="fas fa-check"></i> Seguridad en Escuelas (capacitaciones dinámicas – ejercicios de evacuación – plan de emergencia)</li>
-                </ul>
+            </div>
+
+            <!-- ISO 45001 DETALLE -->
+            <div class="tech-card">
+                <h3 class="tech-title" style="font-size: 1.5rem;">Sistema de Gestión en Seguridad y Salud en el Trabajo, ISO 45001</h3>
+                <p style="margin-bottom: 2rem; color: var(--white);">Confección de Programa de Seguridad, Higiene y Protección del Medio Ambiente. Investigación y seguimiento de los accidentes de vuestro personal y/o tercero, de acuerdo a la legislación vigente.</p>
                 
-                <div style="margin-top: 30px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 20px;">
-                    <ul class="grid-list">
-                        <li><i class="fas fa-chevron-right"></i> Cálculo de carga de fuego.</li>
-                        <li><i class="fas fa-chevron-right"></i> Proyecto y Cálculo de Red Contra Incendio por Hidrantes.</li>
-                        <li><i class="fas fa-chevron-right"></i> Plan Salida de Emergencia y Evacuación en Áreas Laborales.</li>
-                        <li><i class="fas fa-chevron-right"></i> Estudio ergonómico de los distintos puestos de trabajo según Res. 886/15.</li>
-                        <li><i class="fas fa-chevron-right"></i> Asesoramiento para la elección y adquisición de Elementos de Protección Personal.</li>
-                        <li><i class="fas fa-chevron-right"></i> Representación ante organismos de control (SRT, ART, etc.).</li>
-                        <li><i class="fas fa-chevron-right"></i> Seguimiento de trabajo según lo solicitado por los organismos de control.</li>
-                        <li><i class="fas fa-chevron-right"></i> Análisis de riesgo y Capacitación al personal.</li>
-                        <li><i class="fas fa-chevron-right"></i> Estudios Higiénicos Ambientales (Material particulado, Asbestos, Contaminantes químicos).</li>
-                        <li><i class="fas fa-chevron-right"></i> Estudios de Ruido Laboral Res 85/2011 e Iluminación Res 84/2011.</li>
-                        <li><i class="fas fa-chevron-right"></i> Estudio de Vibraciones en los tres ejes Res 295/03.</li>
-                        <li><i class="fas fa-chevron-right"></i> Estudio medición de Puesta a Tierra (Res. 900/2015).</li>
-                        <li><i class="fas fa-chevron-right"></i> Estudio de Ventilación y Carga Térmica (Dec 351/79).</li>
-                        <li><i class="fas fa-chevron-right"></i> Muestreo y Análisis de Aguas de uso y Consumo Humano.</li>
+                <ul class="doc-list">
+                    <li><i class="fas fa-check"></i> Adecuación a normas vigentes.</li>
+                    <li><i class="fas fa-check"></i> Prevención de accidentes.</li>
+                    <li><i class="fas fa-check"></i> Control de Calidad en obra.</li>
+                    <li><i class="fas fa-check"></i> Planes de emergencia y evacuación.</li>
+                    <li><i class="fas fa-check"></i> Auditorías de instalaciones.</li>
+                    <li><i class="fas fa-check"></i> Declaraciones Juradas SRT.</li>
+                    <li><i class="fas fa-check"></i> Programas Resol. 051, 319 y 35.</li>
+                    <li><i class="fas fa-check"></i> Seguridad en Escuelas.</li>
+                </ul>
+
+                <div style="margin-top: 2rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 2rem;">
+                    <ul class="doc-list" style="font-size: 0.85rem; color: var(--text-muted);">
+                        <li>▶ Cálculo de carga de fuego.</li>
+                        <li>▶ Red Contra Incendio por Hidrantes.</li>
+                        <li>▶ Plan Salida de Emergencia.</li>
+                        <li>▶ Estudio ergonómico Res. 886/15.</li>
+                        <li>▶ Asesoramiento en E.P.P.</li>
+                        <li>▶ Representación ante SRT / ART.</li>
+                        <li>▶ Análisis de riesgo y Capacitación.</li>
+                        <li>▶ Estudios Higiénicos Ambientales.</li>
+                        <li>▶ Ruido (Res 85) e Iluminación (Res 84).</li>
+                        <li>▶ Puesta a Tierra (Res 900/15).</li>
+                        <li>▶ Ventilación y Carga Térmica.</li>
+                        <li>▶ Análisis de Aguas.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- ISO 14001 -->
-            <div class="technical-card">
-                <h3>Sistema de Gestión en Protección Ambiental, ISO 14001</h3>
-                <div class="card-intro">
-                    <p>La formulación de estándares y reglas de Gestión Ambiental se encuentra dirigida a la protección del patrimonio natural y cultural asociado a un proyecto, mejorando su imagen frente a la comunidad donde se asienta y frente a empresas, organismos e instituciones y promoviendo mejoras continuas en la ejecución de las labores que este implica:</p>
-                </div>
-                <ul class="grid-list">
-                    <li><i class="fas fa-leaf"></i> Prevención de daños al Medio Ambiente.</li>
-                    <li><i class="fas fa-leaf"></i> Categorización Industrial y Auditoría ambiental.</li>
-                    <li><i class="fas fa-leaf"></i> Estudio de impacto ambiental y Análisis de riesgos.</li>
-                    <li><i class="fas fa-leaf"></i> Desarrollo de política ambiental.</li>
-                    <li><i class="fas fa-leaf"></i> Gestión de Efluentes líquidos y gaseosos.</li>
-                    <li><i class="fas fa-leaf"></i> Residuos peligrosos y/o especiales.</li>
-                    <li><i class="fas fa-leaf"></i> Explotación de recursos hídricos.</li>
-                    <li><i class="fas fa-leaf"></i> Permiso de vuelco de efluentes líquidos.</li>
-                    <li><i class="fas fa-leaf"></i> Plan de contingencia ambiental.</li>
-                    <li><i class="fas fa-leaf"></i> Medición de contaminantes ambientales.</li>
+            <!-- ISO 14001 DETALLE -->
+            <div class="tech-card" style="margin-top: 2rem;">
+                <h3 class="tech-title" style="font-size: 1.5rem;">Sistema de Gestión en Protección Ambiental, ISO 14001</h3>
+                <p style="margin-bottom: 1.5rem;">Formulación de estándares de Gestión Ambiental dirigida a la protección del patrimonio natural y cultural asociado a un proyecto, mejorando su imagen institucional.</p>
+                <ul class="doc-list">
+                    <li>▶ Prevención de daños ambientales.</li>
+                    <li>▶ Categorización Industrial.</li>
+                    <li>▶ Auditoría e Impacto Ambiental.</li>
+                    <li>▶ Análisis de riesgos ambientales.</li>
+                    <li>▶ Efluentes líquidos y gaseosos.</li>
+                    <li>▶ Residuos peligrosos / especiales.</li>
+                    <li>▶ Explotación de recursos hídricos.</li>
+                    <li>▶ Plan de contingencia ambiental.</li>
                 </ul>
             </div>
 
-            <!-- ISO 9001 -->
-            <div class="technical-card">
-                <h3>Sistema De Gestión En Control De Calidad, ISO 9001</h3>
-                <div class="card-intro">
-                    <p>La adopción de un sistema de gestión de la calidad es una decisión estratégica para la empresa que ayuda a mejorar su desempeño global y proporcionar una base sólida para las iniciativas de desarrollo sostenible.</p>
-                    <p style="margin-top: 15px; color: var(--text-muted);">Para una organización implementar un Sistema de gestión de la calidad basado en esta norma internacional son: La capacidad para proporcionar regularmente productos y servicios que satisfagan los requisitos del cliente y los legales y reglamentarios aplicable, facilitar oportunidades de aumentar la satisfacción del cliente, abordar los riesgos y oportunidades.</p>
-                </div>
+            <!-- ISO 9001 DETALLE -->
+            <div class="tech-card" style="margin-top: 2rem;">
+                <h3 class="tech-title" style="font-size: 1.5rem;">Sistema De Gestión En Control De Calidad, ISO 9001</h3>
+                <p>La adopción de un sistema de gestión de la calidad es una decisión estratégica para la empresa que ayuda a mejorar su desempeño global y proporcionar una base sólida para las iniciativas de desarrollo sostenible.</p>
+                <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">Capacidad para proporcionar regularmente productos y servicios que satisfagan los requisitos del cliente y los legales aplicables, facilitando oportunidades de satisfacción.</p>
             </div>
 
         </div>
@@ -433,7 +146,7 @@
             <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Lic. Hugo Roberto Díaz</p>
             <p style="color: var(--text-muted); margin-bottom: 2rem;">Especialista en Seguridad, Higiene y Gestión Ambiental</p>
             <div class="footer-credits">
-                Desarrollo & Diseño por <a href="https://navonejuan.com.ar" target="_blank" rel="noopener noreferrer" title="Navone Juan | Soluciones Informáticas">Navone Juan</a> | <a href="privacidad.html" title="Política de Privacidad">Política de Privacidad</a>
+                Desarrollo & Diseño por <a href="https://navonejuan.com.ar" target="_blank" rel="noopener noreferrer">Navone Juan</a> | <a href="privacidad.html">Política de Privacidad</a>
             </div>
         </div>
     </footer>
@@ -441,7 +154,7 @@
     <script>
         const btnToTop = document.getElementById("btn-to-top");
         window.onscroll = function() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 btnToTop.style.display = "flex";
             } else {
                 btnToTop.style.display = "none";
