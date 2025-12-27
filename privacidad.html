@@ -1,231 +1,280 @@
 <!DOCTYPE html>
-<html  >
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:title" content="H.D - Seguridad, Higiene y Gestión Ambiental - Dirección de Obras Civiles">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hdseguridadyobras.com.ar">
-  <meta property="og:image" content="https://hdseguridadyobras.com.ar/assets/images/logohd.jpg">
-  <meta property="og:image:width" content="1200" /><!-- Importante -->
-  <meta property="og:image:height" content="200" /><!-- Importante -->
-  <meta property="og:image:secure_url" itemprop="image" content="https://hdseguridadyobras.com.ar/assets/images/logohd.jpg">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://hdseguridadyobras.com.ar/assets/images/logohd.jpg">
-  <meta property="twitter:image:width" content="1200" /><!-- Importante -->
-  <meta property="twitter:image:height" content="200" /><!-- Importante -->
-  <meta name="twitter:title" content="H.D - Seguridad, Higiene y Gestión Ambiental - Dirección de Obras Civiles">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo-hd-shmh.png" type="image/x-icon">
-  <meta name="description" content="Política de Privacidad y Uso de Cookies, Ofrecemos Servicios de Seguridad, Higiene y Gestión Ambiental, Proyecto y Dirección de Obras Civiles, en las provincias de Neuquén, Río Negro y Buenos Aires.">
-  <meta name="keywords" content="hd, seguridad, higiene, seguridad e higiene, seguridad y obras, obras civiles, obras, civiles, construccion, cascos, guantes, protocolo, viedma, el condor, san antonio oeste, las grutas, neuquen, cipolletti, fernandez oro, allen, general roca, cinco saltos, general roca, rio negro, alsina, patagones, bahía blanca, pedro luro, la plata, buenos aires, provincia neuquen, provincia rio negro, provincia buenos aires, hugo diaz, hugo, diaz">
-  
-  
-  <title>Política de Privacidad y Uso de Cookies</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/parallax/jarallax.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=UbBpMM"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=UbBpMM" type="text/css">
-  <link rel="stylesheet" href="assets/web/assets/whatsapp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Lic. Hugo Roberto Díaz</title>
+    
+    <!-- Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ9FCEE5HJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  
-  
-  
+      gtag('config', 'G-GQ9FCEE5HJ');
+    </script>
+    <!-- /Analytics -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/LOGO-Redondo_HD-SHyMH.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #0f172a; 
+            --accent-blue: #2563eb;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --white: #ffffff;
+            --overlay: rgba(15, 23, 42, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-light);
+            background-color: var(--primary-blue);
+        }
+
+        #btn-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            z-index: 2000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        #btn-to-top:hover {
+            transform: translateY(-5px);
+            background-color: #1d4ed8;
+        }
+
+        .parallax-bg {
+            background-image: url('imgs/H.D-Seguridad-e-Higiene-Ambiental-fondo.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .parallax-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--overlay);
+            z-index: 1;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.90);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .privacy-content {
+            padding: 120px 0 80px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--white);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--accent-blue);
+            border-bottom: 1px solid rgba(37, 99, 235, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .btn-back:hover {
+            color: var(--accent-blue);
+        }
+
+        footer {
+            padding: 20px 0 20px;
+            background: #020617;
+            text-align: center;
+        }
+
+        .footer-logo {
+            max-width: 70px;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+
+        .footer-credits {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-credits a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            #btn-to-top { bottom: 20px; right: 20px; width: 45px; height: 45px; }
+            .privacy-content { padding-top: 100px; }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Analytics -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ9FCEE5HJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <button id="btn-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-  gtag('config', 'G-GQ9FCEE5HJ');
-</script>
-<!-- /Analytics -->
-
-
-  
-  <section data-bs-version="5.1" class="menu menu2 cid-uV2VC8V6JU" once="menu" id="menu2-1y">
-    
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+    <header>
         <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo-hd-shmh.png" alt="HD | Seguridad, Higiene y Medio Ambiente" style="height: 4rem;">
-                    </a>
-                </span>
-                
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#content4-1q">Nosotros</a></li>
-                    <li class="nav-item dropdown"><a class="nav-link link text-white text-primary dropdown-toggle display-4" href="index.html#top" aria-expanded="false" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside">Servicios</a><div class="dropdown-menu" aria-labelledby="dropdown-543"><a class="text-white text-primary dropdown-item display-4" href="shyma.html">Seguridad, Higiene y Gestión Ambiental</a><a class="text-white text-primary dropdown-item display-4" href="pydoc.html"> Proyecto y Dirección Técnica de Obras Civiles</a></div></li>
-                    <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#contacts1-2f">Contacto</a></li></ul>
-                
-                
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" style="color: white; font-weight: 700; text-decoration: none; font-size: 1.2rem;">HD Seguridad y Obras</a>
+                <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Volver</a>
             </div>
         </div>
-    </nav>
-</section>
+    </header>
 
-<section data-bs-version="5.1" class="header9 cid-uV2VC9E2BP mbr-fullscreen mbr-parallax-background" id="header9-1z">
+    <div class="parallax-bg">
+        <main class="privacy-content container">
+            <h1>POLÍTICA DE PRIVACIDAD Y USO DE COOKIES</h1>
+            
+            <section>
+                <h2>1. Introducción</h2>
+                <p>Esta página web tiene como objetivo brindar información profesional sobre los servicios de Seguridad, Higiene y Gestión Ambiental del Lic. Hugo Roberto Díaz. Respetamos la privacidad de nuestros visitantes y nos comprometemos a tratar cualquier información con transparencia.</p>
+            </section>
 
-    
+            <section>
+                <h2>2. Datos Personales</h2>
+                <p>Nuestra plataforma opera bajo criterios de profesionalismo y respeto por la privacidad:</p>
+                <ul>
+                    <li>No solicitamos registros obligatorios ni creación de cuentas de usuario.</li>
+                    <li>Cualquier dato enviado voluntariamente mediante WhatsApp o correo electrónico será tratado de forma estrictamente confidencial para fines de asesoramiento técnico.</li>
+                    <li>No compartimos ni vendemos información personal a terceros con fines publicitarios.</li>
+                </ul>
+            </section>
 
-    
-    
+            <section>
+                <h2>3. Uso de Cookies y Servicios de Terceros</h2>
+                <p>Este sitio utiliza servicios de terceros para mejorar la experiencia de navegación y entender el tráfico de visitas:</p>
+                <ul>
+                    <li><strong>Google Analytics:</strong> Herramienta de análisis que nos ayuda a entender cómo interactúan los visitantes con la web de forma anónima (páginas visitadas, tiempo de permanencia, etc.).</li>
+                    <li><strong>Google Maps:</strong> Utilizamos mapas interactivos integrados mediante un iframe para facilitar la localización de nuestras oficinas. Al cargar estos mapas, Google puede recopilar su dirección IP y establecer sus propias cookies de seguimiento.</li>
+                </ul>
+                <p>Usted puede configurar su navegador para rechazar estas cookies o eliminar las existentes, lo cual no impedirá el acceso a la información básica del sitio.</p>
+            </section>
 
-    <div class="text-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-9">
-                <div class="image-wrap mb-4">
-                    <img src="assets/images/logo-hd-shmh.png" alt="Seguridad, Higiene y Medio Ambiente">
-                </div>
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><em>POLÍTICA DE PRIVACIDAD Y USO DE COOKIES</em></strong></h1>
-                
-                
+            <section>
+                <h2>4. Enlaces Externos</h2>
+                <p>Nuestro sitio incluye enlaces a plataformas externas (Facebook, Instagram, LinkedIn, WhatsApp). Tenga en cuenta que estas plataformas operan bajo sus propias políticas de privacidad, de las cuales no somos responsables. Le recomendamos consultar las políticas de privacidad de dichas empresas al interactuar con ellas.</p>
+            </section>
+
+            <section>
+                <h2>5. Contacto</h2>
+                <p>Para consultas sobre esta política o el tratamiento de sus datos, puede contactar al equipo de desarrollo a jinesf@gmail.com.</p>
+            </section>
+
+            <section>
+                <h2>6. ¿Qué organismo regula la política de privacidad en Argentina?</h2>
+                <p>En Argentina, la ley de cookies es regulada por la <a href="https://www.argentina.gob.ar/aaip/datospersonales" target="_blank" rel="noopener noreferrer" style="color: var(--white); text-decoration: underline;"><b>Dirección Nacional de Protección de Datos Personales</b></a> (DNPDP). Este es un organismo que funciona desde que la ley fue sancionada en el 2000, y tiene a su cargo Registro Nacional de las Bases de Datos, un instrumento que controla las bases de datos de todo el país, reportando al Ministerio de Justicia, Seguridad y Derechos Humanos.</p>
+                <p>El propósito de la ley de cookies argentina es que todos aquellos que recopilan información para usarlos con fines de marketing y publicidad deban contar con el consentimiento de los usuarios para usar sus datos.</p>
+            </section>
+        </main>
+
+    <footer>
+        <div class="container">
+            <img src="imgs/Logo_HD_SHMH.png" alt="Logo HD" class="footer-logo">
+            <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Lic. Hugo Roberto Díaz</p>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Especialista en Seguridad, Higiene y Gestión Ambiental</p>
+            <div class="footer-credits">
+                Desarrollo & Diseño por <a href="https://navonejuan.com.ar" target="_blank" rel="noopener noreferrer" title="Navone Juan | Soluciones Informáticas">Navone Juan</a> | <a href="privacidad.html" title="Política de Privacidad">Política de Privacidad</a>
             </div>
         </div>
+    </footer>
     </div>
-</section>
 
-<section data-bs-version="5.1" class="content4 cid-uV2VCa4tZ4 mbr-parallax-background" id="content4-20">
-    
+    <script>
+        const btnToTop = document.getElementById("btn-to-top");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnToTop.style.display = "flex";
+            } else {
+                btnToTop.style.display = "none";
+            }
+        };
+    </script>
 
-    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(3, 13, 49);">
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5"><strong>1. Introducción</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Esta página web tiene como único objetivo brindar información básica sobre nuestro comercio. Respetamos la privacidad de quienes nos visitan y por ello aclaramos que no recopilamos, almacenamos ni compartimos datos personales de los usuarios.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content4 cid-uV2VCar3qj mbr-parallax-background" id="content4-21">
-    
-
-    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(3, 13, 49);">
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5"><strong>2. Datos Personales</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7"><div>
-</div><div>No solicitamos registros, formularios ni creación de cuentas.
-</div><div>No utilizamos servicios de análisis (como Google Analytics u otros) que rastreen la navegación.
-</div><div>No compartimos información con terceros ni con fines publicitarios.</div><div>
-</div><div>
-</div><div>
-</div><div>
-</div></h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content4 cid-uV2VCaP5uq mbr-parallax-background" id="content4-22">
-    
-
-    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(3, 13, 49);">
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5"><strong>3. Uso de Cookies</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Esta web no utiliza cookies propias ni de terceros para seguimiento, publicidad o análisis.
-<div>
-</div><div>Únicamente podrían generarse cookies técnicas mínimas y temporales, necesarias para el correcto funcionamiento del servidor (por ejemplo, balanceo de carga o seguridad).
-</div><div>Estas cookies no recopilan datos personales y se eliminan automáticamente al cerrar el navegador.</div><div>
-</div></h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content4 cid-uV2VCbcnCI mbr-parallax-background" id="content4-23">
-    
-
-    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(3, 13, 49);">
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5"><strong>4. Enlaces Externos</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">En caso de incluir enlaces a sitios externos (ejemplo: redes sociales, mapas o plataformas de contacto), esos sitios cuentan con sus propias políticas de privacidad y cookies, independientes de la nuestra.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content4 cid-uV2VCbAtxY mbr-parallax-background" id="content4-24">
-    
-
-    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(3, 13, 49);">
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5"><strong>5. Contacto</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Si tenés alguna consulta sobre esta política podés comunicarte con el <a href="mailto:jinesf@gmail.com" class="text-white">Desarrollador</a>&nbsp;a jinesf@gmail.com.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="footer7 cid-uV2VCd9rz4 mbr-parallax-background" once="footers" id="footer7-28">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="col-12">
-                <p class="mbr-text mb-0 mbr-fonts-style display-4">Diseño y Desarrollo por <a href="https://navonejuan.com.ar" class="text-white" target="_blank">Navone Juan</a><br><a href="privacidad.html" class="text-white">Política de Privacidad</a><a href="https://navonejuan.com.ar" class="text-white" target="_blank"><br></a>
-                </p>
-            </div>
-        </div>
-    </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 0rem;"><a href="https://mobiri.se/2025117" style="flex: 1 1;height: 0rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 0rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7"></p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
- 
-	<a href="https://wa.me/5492994276838" 
-       class="whatsapp-button" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       aria-label="Contactar por WhatsApp">
-
-        <span>Contactar por WhatsApp</span>
-    </a>
-  </body>
+</body>
 </html>
