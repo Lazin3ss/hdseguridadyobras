@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://hdseguridadyobras.com.ar/</title>
+  <link>https://hdseguridadyobras.com.ar/</link>
+
+<item>
+     <link>https://hdseguridadyobras.com.ar/</link>
+     <title>Lic. Hugo Roberto Díaz | Seguridad, Higiene y Gestión Ambiental</title>
+     <description>Ofrecemos Servicios de Seguridad e Higiene Ambiental, Proyecto y Dirección de Obras Civiles, en las provincias de Neuquén, Buenos Aires y Río Negro.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://hdseguridadyobras.com.ar/index.html</link>
+     <title>Lic. Hugo Roberto Díaz | Seguridad, Higiene y Gestión Ambiental</title>
+     <description>Ofrecemos Servicios de Seguridad e Higiene Ambiental, Proyecto y Dirección de Obras Civiles, en las provincias de Neuquén, Buenos Aires y Río Negro.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://hdseguridadyobras.com.ar/shyma.html</link>
+     <title>Seguridad, Higiene y Gestión Ambiental | Lic. Hugo Roberto Díaz</title>
+     <description>Servicios profesionales de Seguridad, Higiene y Gestión Ambiental. Sistema de Gestión Integrado bajo Normas ISO 45001, 14001 y 9001.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://hdseguridadyobras.com.ar/pydoc.html</link>
+     <title>Proyecto y Dirección Técnica de Obras Civiles | Lic. Hugo Roberto Díaz</title>
+     <description>Estudio de Construcción dedicado al Proyecto, Cálculo y Dirección Técnica de Viviendas Unifamiliares. Seriedad, Responsabilidad y Compromiso.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://hdseguridadyobras.com.ar/privacidad.html</link>
+     <title>Política de Privacidad | Lic. Hugo Roberto Díaz</title>
+     <description>Política de privacidad y términos de uso de cookies de HD Seguridad y Obras. Transparencia y protección de datos personales.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
