@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Viviendas Unifamiliares en la Provincia de Río Negro | Lic. Hugo Roberto Díaz</title>
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ9FCEE5HJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GQ9FCEE5HJ');
+    </script>
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Proyecto y Dirección Técnica de Viviendas Unifamiliares en la Provincia de Río Negro. Respaldo profesional para créditos hipotecarios y Procrear. Lic. Hugo Roberto Díaz.">
+	<meta name="keywords" content="hd, seguridad, higiene, seguridad e higiene, seguridad y obras, obras civiles, obras, civiles, construccion, cascos, guantes, protocolo, viedma, el condor, san antonio oeste, las grutas, neuquen, cipolletti, fernandez oro, allen, general roca, cinco saltos, general roca, rio negro, alsina, patagones, bahía blanca, pedro luro, la plata, buenos aires, provincia neuquen, provincia rio negro, provincia buenos aires, hugo diaz, hugo, diaz, viviendas, unifamiliares">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/LOGO-Redondo_HD-SHyMH.png" type="image/png">
+    <!-- Open Graph / Facebook -->
+	    <meta property="og:title" content="Lic. Hugo Roberto Díaz | Viviendas Unifamiliares en la Provincia de Río Negro">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hdseguridadyobras.com.ar">
+    <meta property="og:image" content="https://hdseguridadyobras.com.ar/imgs/Logo_HD.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:secure_url" itemprop="image" content="https://hdseguridadyobras.com.ar/imgs/Logo_HD_SHMH.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lic. Hugo Roberto Díaz | Viviendas Unifamiliares en la Provincia de Río Negro">
+    <meta name="twitter:image" content="https://hdseguridadyobras.com.ar/imgs/Logo_HD.jpg">
+    <meta property="twitter:image:width" content="1200">
+    <meta property="twitter:image:height" content="800">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilo General Externo -->
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="whatsapp.css">
+    <style>
+        :root {
+            --primary-blue: #0f172a; 
+            --accent-blue: #2563eb;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --white: #ffffff;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --overlay: rgba(15, 23, 42, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background-color: var(--primary-blue);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Parallax Background */
+        .parallax-section {
+            background-image: url('H.D-Seguridad-e-Higiene-Ambiental-fondo.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding: 100px 0;
+        }
+
+        .parallax-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--overlay);
+            z-index: 1;
+        }
+
+        .parallax-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Header */
+        header {
+            background: rgba(15, 23, 42, 0.98);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-nav {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            gap: 10px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-wa { background-color: var(--success); color: white; }
+        .btn-wa:hover { background-color: #16a34a; transform: translateY(-2px); }
+        .btn-primary { background-color: var(--accent-blue); color: white; }
+        .btn-primary:hover { background-color: #1d4ed8; transform: translateY(-2px); }
+
+        /* Tech Cards */
+        .tech-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .doc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .doc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .doc-list i {
+            color: var(--accent-blue);
+            margin-top: 5px;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+
+        .process-item {
+            background: rgba(255,255,255,0.02);
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.9rem;
+            height: 100%;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            background: #020617;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-logo { 
+            max-width: 70px; 
+            margin-bottom: 1.5rem; 
+        }
+
+        .footer-credits {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 1.5rem;
+        }
+
+        .footer-credits a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-credits a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* To Top */
+        #btn-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .parallax-section { background-attachment: scroll; }
+            h1 { font-size: 2.2rem !important; }
+            .tech-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-nav">Hugo Roberto Díaz</a>
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <a href="https://wa.me/5492994276838" target="_blank" rel="noopener noreferrer" class="btn btn-wa" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="index.html" class="logo-nav" style="font-size: 0.9rem; font-weight: 500;"><i class="fas fa-arrow-left"></i> Volver</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero parallax-section">
+        <div class="container parallax-content" style="text-align: center;">
+            <h1 style="font-size: 3.2rem; margin-bottom: 1rem;"><i class="fas fa-house-chimney" style="color: var(--accent-blue);"></i> PROYECTO Y DIRECCIÓN TÉCNICA DE VIVIENDAS</h1>
+            <p class="highlight-blue" style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">Provincia de Río Negro</p>
+            <p style="max-width: 850px; margin: 2.5rem auto; font-size: 1.15rem;">Construya su vivienda con respaldo técnico profesional, control de calidad y cumplimiento normativo en cada etapa. Proyecto, planificación y dirección técnica integral para viviendas unifamiliares en Río Negro.</p>
+            <p style="margin-bottom: 2.5rem;"><i class="fas fa-location-dot" style="color: var(--accent-blue);"></i> Atención en toda la Provincia de Río Negro.</p>
+            <a href="https://wa.me/5492994276838" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-whatsapp"></i> SOLICITAR ASESORAMIENTO TÉCNICO</a>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section class="parallax-section" style="padding-top: 0;">
+        <div class="container parallax-content">
+            
+            <!-- RIESGO ECONOMICO -->
+            <div class="tech-card" style="border-left: 5px solid var(--danger);">
+                <h3 class="section-title" style="color: var(--danger);"><i class="fas fa-triangle-exclamation"></i> Construir sin Dirección Técnica es un riesgo económico</h3>
+                <p>Una obra sin control profesional puede generar:</p>
+                <ul class="doc-list" style="margin-top: 1.5rem;">
+                    <li><i class="fas fa-circle-xmark" style="color: var(--danger);"></i> Sobrecostos imprevistos</li>
+                    <li><i class="fas fa-circle-xmark" style="color: var(--danger);"></i> Errores constructivos</li>
+                    <li><i class="fas fa-circle-xmark" style="color: var(--danger);"></i> Retrasos en la ejecución</li>
+                    <li><i class="fas fa-circle-xmark" style="color: var(--danger);"></i> Incumplimientos municipales</li>
+                    <li><i class="fas fa-circle-xmark" style="color: var(--danger);"></i> Conflictos con contratistas</li>
+                    <li><i class="fas fa-circle-xmark" style="color: var(--danger);"></i> Problemas en la finalización de obra</li>
+                </ul>
+                <p style="margin-top: 2rem; font-weight: 600; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">La Dirección Técnica no es un trámite. Es el respaldo que garantiza que su inversión esté protegida.</p>
+            </div>
+
+            <!-- SERVICIOS INCLUIDOS -->
+            <div class="tech-card">
+                <h3 class="section-title highlight-blue"><i class="fas fa-list-check"></i> ¿Qué incluye el servicio de Proyecto y Dirección Técnica?</h3>
+                <ul class="doc-list">
+                    <li><i class="fas fa-check"></i> Anteproyecto y desarrollo de planos</li>
+                    <li><i class="fas fa-check"></i> Presentación y gestión de planos municipales</li>
+                    <li><i class="fas fa-check"></i> Interpretación técnica de diseño e instalaciones</li>
+                    <li><i class="fas fa-check"></i> Control de ejecución por etapas</li>
+                    <li><i class="fas fa-check"></i> Control de calidad de materiales</li>
+                    <li><i class="fas fa-check"></i> Supervisión de seguridad en obra</li>
+                    <li><i class="fas fa-check"></i> Certificaciones por avance según contrato</li>
+                    <li><i class="fas fa-check"></i> Cumplimiento de plazos establecidos</li>
+                    <li><i class="fas fa-check"></i> Tramitaciones ante organismos públicos</li>
+                    <li><i class="fas fa-check"></i> Plano conforme a obra final</li>
+                </ul>
+                <p style="margin-top: 1.5rem; font-style: italic; color: var(--text-muted);">Cada etapa es controlada con criterio técnico y profesional.</p>
+            </div>
+
+            <!-- CREDITOS / PROCREAR -->
+            <div class="tech-card">
+                <h3 class="section-title highlight-blue"><i class="fas fa-landmark"></i> Viviendas con Crédito Hipotecario o Modalidad Procrear</h3>
+                <p>Si accedió o planea acceder a un crédito para construcción, las entidades exigen:</p>
+                <ul class="doc-list" style="margin: 1.5rem 0;">
+                    <li><i class="fas fa-file-circle-check"></i> Planos aprobados</li>
+                    <li><i class="fas fa-user-gear"></i> Dirección técnica responsable</li>
+                    <li><i class="fas fa-stamp"></i> Certificaciones de avance</li>
+                    <li><i class="fas fa-building-shield"></i> Cumplimiento municipal y normativo</li>
+                </ul>
+                <p>Una correcta planificación técnica evita observaciones y demoras en el desembolso del crédito.</p>
+            </div>
+
+            <!-- DIFERENCIAL PROFESIONAL -->
+            <div class="tech-card" style="border-left: 5px solid var(--accent-blue);">
+                <h3 class="section-title highlight-blue"><i class="fas fa-award"></i> Diferencial Profesional</h3>
+                <p>La Dirección Técnica se realiza con doble enfoque técnico:</p>
+                <div style="display: flex; gap: 20px; margin: 1.5rem 0; flex-wrap: wrap;">
+                    <span style="background: rgba(37, 99, 235, 0.1); padding: 0.8rem 1.5rem; border-radius: 10px; border: 1px solid var(--accent-blue); font-weight: 600;">Técnico Constructor</span>
+                    <span style="background: rgba(37, 99, 235, 0.1); padding: 0.8rem 1.5rem; border-radius: 10px; border: 1px solid var(--accent-blue); font-weight: 600;">Lic. en Seguridad, Higiene y Medio Ambiente</span>
+                </div>
+                <p>Esto permite integrar:</p>
+                <ul class="doc-list" style="margin-top: 1rem;">
+                    <li><i class="fas fa-check"></i> Control constructivo</li>
+                    <li><i class="fas fa-check"></i> Seguridad en obra</li>
+                    <li><i class="fas fa-check"></i> Prevención de riesgos</li>
+                    <li><i class="fas fa-check"></i> Cumplimiento normativo</li>
+                </ul>
+                <p style="margin-top: 1.5rem; font-weight: 600; color: var(--white);">Una obra segura es una obra bien ejecutada.</p>
+            </div>
+
+            <!-- PROCESO DE TRABAJO -->
+            <div class="tech-card">
+                <h3 class="section-title highlight-blue"><i class="fas fa-list-ol"></i> Proceso de Trabajo</h3>
+                <div class="process-grid">
+                    <div class="process-item"><b>1️⃣ Reunión técnica inicial</b></div>
+                    <div class="process-item"><b>2️⃣ Desarrollo de anteproyecto</b></div>
+                    <div class="process-item"><b>3️⃣ Elaboración y presentación de planos municipales</b></div>
+                    <div class="process-item"><b>4️⃣ Dirección técnica durante ejecución</b></div>
+                    <div class="process-item"><b>5️⃣ Certificación final y plano conforme a obra</b></div>
+                </div>
+                <p style="margin-top: 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">Orden, planificación y control en cada etapa.</p>
+            </div>
+
+            <!-- CONTACTO FINAL -->
+            <div class="tech-card" style="text-align: center; background: rgba(37, 99, 235, 0.05); border-color: var(--accent-blue);">
+                <h3 class="section-title highlight-blue" style="justify-content: center;"><i class="fas fa-headset"></i> Solicite Asesoramiento Profesional</h3>
+                <p style="margin-bottom: 2rem;">Si está por iniciar la construcción de su vivienda en la Provincia de Río Negro, es fundamental contar con respaldo técnico desde el inicio.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 2.5rem; text-align: left;">
+                    <p><i class="fas fa-map-location-dot highlight-blue"></i> Provincia de Río Negro</p>
+                    <p><i class="fas fa-phone highlight-blue"></i> 299 427 6838</p>
+                    <p><i class="fas fa-envelope highlight-blue"></i> hdseguridadehigiene@gmail.com</p>
+                    <p><i class="fas fa-globe highlight-blue"></i> hdseguridadyobras.com.ar</p>
+                </div>
+
+                <a href="https://wa.me/5492994276838" target="_blank" rel="noopener noreferrer" class="btn btn-wa" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                    <i class="fab fa-whatsapp"></i> SOLICITAR REUNIÓN TÉCNICA
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="imgs/Logo_HD_SHMH.png" alt="Logo HD" class="footer-logo">
+            <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Lic. Hugo Roberto Díaz</p>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Especialista en Seguridad, Higiene y Gestión Ambiental</p>
+            <div class="footer-credits">
+                Desarrollo & Diseño por <a href="https://navonejuan.com.ar" target="_blank" rel="noopener noreferrer">Navone Juan</a> | <a href="privacidad.html">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btnToTop = document.getElementById("btn-to-top");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                btnToTop.style.display = "flex";
+            } else {
+                btnToTop.style.display = "none";
+            }
+        };
+    </script>
+	<a href="https://wa.me/5492994276838" 
+       class="whatsapp-button" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contactar por WhatsApp">
+        <span>Contactar por WhatsApp</span>
+    </a>
+</body>
+</html>
