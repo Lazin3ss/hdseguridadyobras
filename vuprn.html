@@ -252,6 +252,29 @@
             h1 { font-size: 2.2rem !important; }
             .tech-card { padding: 1.5rem; }
         }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .profile-container { grid-template-columns: 1fr; text-align: center; }
+    .hero h1 { font-size: 2.5rem; }
+    .matriculas { text-align: left; }
+    .profile-image-wrapper { margin-bottom: 3rem; order: -1; }
+}
+
+@media (max-width: 768px) {
+    .parallax-section { background-attachment: scroll; }
+    .hero { padding: 150px 0 100px; }
+    .profile-image { width: 250px; height: 250px; }
+    .profile-decoration { width: 270px; height: 270px; }
+    #btn-to-top { bottom: 20px; right: 20px; width: 45px; height: 45px; }
+    
+    /* Nueva regla específica para el título de navegación en móviles */
+    .logo-nav {
+        font-size: 0.85rem; /* Tamaño reducido para móviles */
+        max-width: 200px;  /* Limitamos el ancho para que no choque con el botón */
+        line-height: 1.2;
+    }
+}
     </style>
 </head>
 <body>
