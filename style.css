@@ -132,8 +132,8 @@ nav {
 }
 
 .logo-nav {
-    font-size: 0.5rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 700;
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s;
