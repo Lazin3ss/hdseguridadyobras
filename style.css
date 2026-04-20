@@ -6,6 +6,7 @@
     --text-muted: #94a3b8;
     --white: #ffffff;
     --success: #22c55e;
+    --danger: #ef4444;
     --overlay: rgba(15, 23, 42, 0.85);
 }
 
@@ -300,4 +301,11 @@ footer { padding: 60px 0; background: #020617; text-align: center; }
     .profile-image { width: 250px; height: 250px; }
     .profile-decoration { width: 270px; height: 270px; }
     #btn-to-top { bottom: 20px; right: 20px; width: 45px; height: 45px; }
+    
+    /* Nueva regla específica para el título de navegación en móviles */
+    .logo-nav {
+        font-size: 0.85rem; /* Tamaño reducido para móviles */
+        max-width: 200px;  /* Limitamos el ancho para que no choque con el botón */
+        line-height: 1.2;
+    }
 }
